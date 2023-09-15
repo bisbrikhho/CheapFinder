@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from CheapFinder import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('about-us/',views.aboutus),
+    path('login/',views.login),
+    path('signup/',views.signup),
+    path('',views.home)
 ]
